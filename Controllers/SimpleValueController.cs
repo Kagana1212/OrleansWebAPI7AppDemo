@@ -16,14 +16,14 @@ namespace OrleansWebAPI7AppDemo.Controllers
         [HttpGet()]
         public String TestValue()
         {
-            return "あいうえお";
+            return "アイウエオ";
         }
 
 
         [HttpGet()]
         public IEnumerable<string> TestArray()
         {
-            string[] items = new string[] { "あいうえお", "かきくけこ", "さしすせそ" };
+            string[] items = new string[] { "あいうえお", "かきくけこ", "さしすせそ" , "たちつてと", "なにぬねの"};
             return items;
         }
 
@@ -31,7 +31,7 @@ namespace OrleansWebAPI7AppDemo.Controllers
         public Animal TestObject()
         {
             Animal animal_1 = new Animal();
-            animal_1.Name = "いぬ";
+            animal_1.Name = "柴犬";
             return animal_1;
         }
 
