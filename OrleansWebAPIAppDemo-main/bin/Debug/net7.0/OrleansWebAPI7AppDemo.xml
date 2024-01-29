@@ -1,0 +1,139 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>OrleansWebAPI7AppDemo</name>
+    </assembly>
+    <members>
+        <member name="M:OrleansWebAPI7AppDemo.Controllers.Accounting.AccountItemController.Index">
+            <summary>
+            勘定科目を取得します
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OrleansWebAPI7AppDemo.Controllers.Accounting.AccountItemController.Get(System.String)">
+            <summary>
+            指定したコードの勘定科目を取得します
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OrleansWebAPI7AppDemo.Controllers.Accounting.AccountItemController.Set(System.String,OrleansWebAPI7AppDemo.Models.Accounting.AccountItem)">
+            <summary>
+            会社情報を追加・修正します。
+            </summary>
+            <param name="id"></param>
+            <param name="accountItem"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OrleansWebAPI7AppDemo.Controllers.Accounting.AccountItemController.Remove(System.String)">
+            <summary>
+            会社情報を削除します
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OrleansWebAPI7AppDemo.Controllers.Accounting.AuthenticationController.GetHash(OrleansWebAPI7AppDemo.Models.Accounting.Authentication)">
+            <summary>
+            ハッシュコードを取得します
+            </summary>
+            <param name="authentication"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OrleansWebAPI7AppDemo.Controllers.Accounting.AuthenticationController.Remove(System.String)">
+            <summary>
+            ユーザーデータを削除します
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OrleansWebAPI7AppDemo.Controllers.Accounting.AuthenticationController.Authentication(OrleansWebAPI7AppDemo.Models.Accounting.Authentication)">
+            <summary>
+            ユーザーIDとパスワードから認証処理を行い
+            認証できた場合にはセッションIDを返す
+            </summary>
+            <param name="authentication"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OrleansWebAPI7AppDemo.Controllers.Accounting.CompanyController.Index">
+            <summary>
+            会社情報のコード一覧を取得します
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OrleansWebAPI7AppDemo.Controllers.Accounting.CompanyController.Get(System.String)">
+            <summary>
+            会社情報をコードを指定して取得します
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OrleansWebAPI7AppDemo.Controllers.Accounting.CompanyController.Set(System.String,OrleansWebAPI7AppDemo.Models.Accounting.Company)">
+            <summary>
+            会社情報を追加・修正します。
+            </summary>
+            <param name="id"></param>
+            <param name="company"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OrleansWebAPI7AppDemo.Controllers.Accounting.CompanyController.Remove(System.String)">
+            <summary>
+            会社情報を削除します
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OrleansWebAPI7AppDemo.Controllers.Accounting.TECHController.Index">
+            <summary>
+            勘定科目を取得します
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OrleansWebAPI7AppDemo.Controllers.Accounting.SessionController.Get(System.Guid)">
+            <summary>
+            セッション情報を取得します
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:OrleansWebAPI7AppDemo.Models.Accounting.Company">
+            <summary>
+            会社情報
+            </summary>
+        </member>
+        <member name="T:OrleansWebAPI7AppDemo.Models.Accounting.Authentication">
+            <summary>
+            認証モデル（パスワードあり）
+            </summary>
+        </member>
+        <member name="T:OrleansWebAPI7AppDemo.Models.Accounting.AuthenticationState">
+            <summary>
+            認証モデル （パスワードはハッシュ済　保管用）
+            </summary>
+        </member>
+        <member name="T:OrleansWebAPI7AppDemo.Models.Accounting.Session">
+            <summary>
+            セッションモデル
+            </summary>
+        </member>
+        <member name="M:OrleansWebAPI7AppDemo.Orleans.Grains.AccountItemGrain.OnActivateAsync(System.Threading.CancellationToken)">
+            <summary>
+            グレイン有効化時の処理
+            </summary>
+            <param name="cancellationToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OrleansWebAPI7AppDemo.Orleans.Grains.AuthenticationGrain.OnActivateAsync(System.Threading.CancellationToken)">
+            <summary>
+            グレイン有効化時の処理
+            </summary>
+            <param name="cancellationToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OrleansWebAPI7AppDemo.Orleans.Grains.CompanyGrain.OnActivateAsync(System.Threading.CancellationToken)">
+            <summary>
+            グレイン有効化時の処理
+            </summary>
+            <param name="cancellationToken"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
