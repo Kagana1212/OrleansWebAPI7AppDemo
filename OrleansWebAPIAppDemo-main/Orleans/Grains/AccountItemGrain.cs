@@ -31,7 +31,6 @@ namespace OrleansWebAPI7AppDemo.Orleans.Grains
                         _model = new AccountItem
                         {
                             首都 = "東京",
-                            観光地 = "",
 
                         };
                         
@@ -42,7 +41,6 @@ namespace OrleansWebAPI7AppDemo.Orleans.Grains
                         _model = new AccountItem
                         {
                             首都 = "ワシントンD.C.",
-                            観光地 = "自由の女神",
                         };
                     }
                     break;
@@ -51,7 +49,16 @@ namespace OrleansWebAPI7AppDemo.Orleans.Grains
                         _model = new AccountItem
                         {
                             首都 = "ロンドン",
-                            観光地 = "ビック・ベン",
+
+
+                        };
+                    }
+                    break;
+                case "フランス":
+                    {
+                        _model = new AccountItem
+                        {
+                            首都 = "パリ",
 
 
                         };

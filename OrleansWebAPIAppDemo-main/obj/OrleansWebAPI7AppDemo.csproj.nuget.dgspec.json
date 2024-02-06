@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ktc\\Desktop\\OrleansWebAPI7AppDemo-main\\OrleansWebAPI7AppDemo.csproj": {}
+    "C:\\Users\\ktc\\Desktop\\OrleansWebAPIAppDemo-main\\OrleansWebAPI7AppDemo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ktc\\Desktop\\OrleansWebAPI7AppDemo-main\\OrleansWebAPI7AppDemo.csproj": {
+    "C:\\Users\\ktc\\Desktop\\OrleansWebAPIAppDemo-main\\OrleansWebAPI7AppDemo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ktc\\Desktop\\OrleansWebAPI7AppDemo-main\\OrleansWebAPI7AppDemo.csproj",
+        "projectUniqueName": "C:\\Users\\ktc\\Desktop\\OrleansWebAPIAppDemo-main\\OrleansWebAPI7AppDemo.csproj",
         "projectName": "OrleansWebAPI7AppDemo",
-        "projectPath": "C:\\Users\\ktc\\Desktop\\OrleansWebAPI7AppDemo-main\\OrleansWebAPI7AppDemo.csproj",
+        "projectPath": "C:\\Users\\ktc\\Desktop\\OrleansWebAPIAppDemo-main\\OrleansWebAPI7AppDemo.csproj",
         "packagesPath": "C:\\Users\\ktc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ktc\\Desktop\\OrleansWebAPI7AppDemo-main\\obj\\",
+        "outputPath": "C:\\Users\\ktc\\Desktop\\OrleansWebAPIAppDemo-main\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ktc\\AppData\\Roaming\\NuGet\\NuGet.Config",

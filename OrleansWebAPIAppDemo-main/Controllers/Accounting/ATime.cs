@@ -8,62 +8,18 @@ namespace OrleansWebAPI7AppDemo.Controllers.Accounting
 {
     [ApiController]
     [Route("A/[controller]")]
-    public class AController : ControllerBase
+    public class ATimeController : ControllerBase
     {
 
         private readonly IGrainFactory _grains;
 
-        public AController(IGrainFactory grains)
+        public ATimeController(IGrainFactory grains)
         {
             _grains = grains;
         }
-       
 
         [HttpGet()]
-        [Route("日本")]
-        public string getday()
-        {
-
-            return DateTime.Now.ToString();
-
-            
-        }
-        [HttpGet()]
-        [Route("アメリカ")]
-        public string getdate()
-        {
-
-            return DateTime.Now.AddHours(-14).ToString();
-        }
-
-
-            [HttpGet()]
-        [Route("イギリス(UTC)")]
-        public string gettime()
-        {
-
-            return DateTime.UtcNow.ToString();
-
-
-        }
-
-        [HttpGet()]
-        [Route("フランス")]
-        public string getweek()
-        {
-
-            return DateTime.Now.AddHours(-8).ToString();
-
-
-        }
-
-
-
-
-
-
-        [HttpGet()]
-        [Route("Country")]
+        [Route("Time")]
         public IList<string> Index()
         {
             var items = new List<string>();
@@ -72,13 +28,12 @@ namespace OrleansWebAPI7AppDemo.Controllers.Accounting
             items.Add("日本");
             items.Add("アメリカ");
             items.Add("イギリス");
-            items.Add("フランス");
             // ↑↑　
             return items;
         }
 
         [HttpGet()]
-        [Route("capital")]
+        [Route("{id}")]
 
         public async Task<IActionResult> Get(String id)
         {
@@ -101,4 +56,3 @@ namespace OrleansWebAPI7AppDemo.Controllers.Accounting
     }
 }
 
-    
